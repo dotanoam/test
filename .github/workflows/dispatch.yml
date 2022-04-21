@@ -1,0 +1,14 @@
+name: check
+
+on: 
+  workflow_dispatch:
+  schedule:
+   - cron: "*/5 * * * *"
+
+
+jobs:
+  log-the-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo 'running'
