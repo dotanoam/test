@@ -1,0 +1,12 @@
+name: pull-request
+
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check
+        run: echo "check"
+      - name: check2
+        run: echo "12 3"
