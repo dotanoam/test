@@ -1,0 +1,15 @@
+name: create artifact
+
+on: [push, pull_request]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create artifact
+        run: |
+          echo "echo 123" > artifact.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: artifact2
+          path: artifact.sh
