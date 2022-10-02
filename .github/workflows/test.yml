@@ -1,6 +1,6 @@
 name: download artifact
 
-on: [push]
+on: [pull_request]
 
 jobs:
   job:
